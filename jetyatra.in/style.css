@@ -1,0 +1,351 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgba(244, 11, 11, 0.023); */
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+}
+
+.phone-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  font-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.phone-number img {
+  width: 50px;
+}
+
+.main-hero h1 {
+  font-size: 4.5rem;
+  margin: 10px;
+  color: #ba9753;
+  text-shadow: 3px 3px 5px #000;
+}
+
+.main-hero p {
+  font-size: 2rem;
+  margin: 10px;
+  text-shadow: 3px 3px 5px #000;
+  color: white;
+}
+
+button {
+  margin: 10px;
+  background-color: #ba9753;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  color: white;
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.main-hero {
+  width: 60%;
+}
+
+.services-heading {
+  margin: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.services-icons img {
+  margin: 30px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.services-icons p {
+  font-size: 1.5rem;
+}
+.services-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-flex {
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.package-box img {
+  width: 380px;
+}
+
+.package-box {
+  margin: 10px;
+  border: 2px solid #ba9753;
+  padding: 8px;
+}
+
+.package-box-flex {
+  display: flex;
+  gap: 5px;
+}
+
+.package-star {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+ul li:before {
+  content: "✔ ";
+}
+
+.images {
+  padding: 10px;
+  overflow: hidden;
+  margin: 10px;
+  border: 2px solid #ba9753;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.images img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.itinerary{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #ba9753;
+}
+
+.itinerary h1{
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: #ba9753;
+    border-radius: 10px;
+}
+
+.itinerary p{
+    margin: 5px;
+}
+
+.in-ex{
+    justify-content:space-around;
+    padding: 20px;
+    border: 2px solid #ba9753;
+    margin: 10px;
+    display: flex;
+    font-size: 1rem;
+}
+
+.destination form {
+    padding: 20px;
+    gap: 10px;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    border: 5px solid #ba9753;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-wrap: wrap;
+  }
+  
+  form input,
+  select {
+    height: 60px;
+    width: 100%;
+    padding: 20px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    color: black;
+    background-color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0.5px 1px 8px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .form-heading {
+    margin: 10px;
+  }
+
+  .footer-flex img{
+    width: 180px;
+  }
+
+  .footer-flex{
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-flex-rights{
+    margin: 15px;
+display: flex;
+justify-content: center;
+align-items: center
+;
+  }
+
+  footer{
+    margin-top: 20px;
+    padding: 10px;
+    overflow: hidden;
+    border-top: 2px solid #cfcaca;
+  }
+
+  .made-with-love{
+    text-align: center;
+  }
+
+
+@media screen and (max-width: 400px) {
+  .package-box-flex {
+    flex-direction: column;
+  }
+
+  .images img {
+    width: 40%;
+    object-fit: cover;
+  }
+
+  .in-ex{
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid #ba9753;
+    margin: 10px;
+    display: flex;
+}
+
+
+  .package-box img {
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    overflow: hidden;
+  }
+
+  .package-star {
+    display: flex;
+    width: 160px;
+    height: 40px;
+  }
+
+  nav img {
+    width: 150px;
+  }
+
+  .phone-number img {
+    width: 30px;
+  }
+
+  .phone-number p {
+    font-size: 0.8rem;
+  }
+
+  .main-hero h1 {
+    font-size: 2.5rem;
+    margin: 10px;
+    color: #ba9753;
+    text-shadow: 3px 3px 5px #000;
+  }
+
+  .main-hero p {
+    font-size: 1.2rem;
+    margin: 10px;
+    text-shadow: 3px 3px 5px #000;
+    color: white;
+  }
+
+  button {
+    margin: 10px;
+    background-color: #ba9753;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: white;
+    font-size: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+
+  .main-hero {
+    width: 60%;
+  }
+
+  .services-heading {
+    margin: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .services-icons img {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .services-icons p {
+    font-size: 0.7rem;
+  }
+  .services-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-flex {
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("assest/kumbhboat.webp");
+  background-position: center;
+  background-size: cover;
+}
